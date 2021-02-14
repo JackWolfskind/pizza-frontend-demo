@@ -1,0 +1,6 @@
+subscription ToppingChanged {
+  createdTopping {
+    id
+    name
+  }
+}

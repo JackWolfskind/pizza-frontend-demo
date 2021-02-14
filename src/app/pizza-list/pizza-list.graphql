@@ -1,0 +1,10 @@
+query ListPizza {
+  pizzas {
+    edges {
+      node {
+        id,
+        name
+      }
+    }
+  }
+}

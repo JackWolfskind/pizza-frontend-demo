@@ -1,0 +1,30 @@
+<div class="container">
+  <mat-toolbar>
+    <mat-toolbar-row>
+      <h1>Pizza</h1>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <table mat-table [dataSource]="$pizzas">
+    <ng-container matColumnDef="id">
+      <th class="id" mat-header-cell *matHeaderCellDef>ID</th>
+      <td class="id" mat-cell *matCellDef="let pizza; let i = index">
+        {{ pizza.id }}
+      </td>
+    </ng-container>
+    
+
+    <ng-container matColumnDef="name">
+      <th class="name" mat-header-cell *matHeaderCellDef>Name</th>
+      <td class="name" mat-cell *matCellDef="let pizza; let i = index">
+        {{ pizza.name }}
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row (click)="delete(row.id)" *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+  <ng-template #nopizzaSelected>
+    no pizza selected, please select a pizza to see events!
+  </ng-template>
+</div>

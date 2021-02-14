@@ -1,0 +1,6 @@
+mutation CreateTopping($createTopping: CreateTopping!) {
+  createOneTopping (input: {topping: $createTopping} ) {
+    id
+    name
+  }
+}   

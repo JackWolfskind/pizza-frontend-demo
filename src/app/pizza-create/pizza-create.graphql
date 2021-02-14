@@ -1,0 +1,13 @@
+mutation CreatePizza($createPizza: CreatePizza!) {
+  createOnePizza (input: { pizza: $createPizza }) {
+    id
+    name
+  }
+}
+
+mutation AddToppingsToPizza($relation: RelationsInput!) {
+ addToppingsToPizza(input: $relation) {
+    id
+    name
+  }
+}

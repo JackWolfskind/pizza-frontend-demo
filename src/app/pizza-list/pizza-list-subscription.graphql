@@ -1,0 +1,30 @@
+subscription PizzaCreated {
+  createdPizza {
+    id
+    name
+    toppings {
+      id
+      name
+    }
+  }
+}
+
+subscription PizzaUpdated {
+  updatedOnePizza {
+    id
+    name
+    toppings {
+      id
+      name
+    }
+  }
+}
+
+
+subscription PizzaDeleted {
+  deletedOnePizza {
+    id
+    name
+  }
+}
+

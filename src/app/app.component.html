@@ -1,0 +1,27 @@
+<div
+  class="main-container"
+  autosize
+>
+  <mat-toolbar color="primary" class="main-toolbar">
+    <mat-toolbar-row>
+      <h1 class="main-app-name">Pizza Tool</h1>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <mat-sidenav-container
+    [hasBackdrop]="true"
+    class="main-sidenav-container"
+  >
+    <mat-sidenav-content>
+      <app-pizza-list></app-pizza-list>
+      <app-pizza-list-with-topping></app-pizza-list-with-topping>
+
+      <div class=row>
+        <app-pizza-create class="col-6"></app-pizza-create>
+        <app-topping-create class="col-6"></app-topping-create>
+      </div>
+
+      <mat-toolbar class="footer"></mat-toolbar>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

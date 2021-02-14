@@ -1,0 +1,10 @@
+query ListToppingsForPizzaCreate {
+  toppings {
+    edges {
+      node {
+        id
+        name
+      }
+    }
+  }
+}

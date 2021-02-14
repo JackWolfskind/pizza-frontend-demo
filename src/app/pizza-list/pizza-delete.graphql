@@ -1,0 +1,6 @@
+mutation DeletePizza($pizzaId: ID!) {
+  deleteOnePizza (input: {id: $pizzaId}) {
+    id
+    name
+  }
+}
